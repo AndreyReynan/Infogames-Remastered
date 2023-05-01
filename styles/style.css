@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 13px;
+}
+body::-webkit-scrollbar-thumb{
+    opacity: 0;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #013475;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.cabecalho{
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    position: fixed;
+    z-index: 10;
+}
+.cabecalho .logo{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.cabecalho .logo h1{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 40px;
+    color: white;
+}
+.cabecalho .links{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+.cabecalho .links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.cabecalho .links a:hover{
+    text-decoration: underline;
+}
+.infos{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 80px;
+    width: 65%;
+    left: 5%;
+    font-size: 20px;
+}
+.infos .img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.infos .img img{
+    width: 75%;
+    height: 100%;
+}
+.infos .img .selectLeft{
+    background-color: #d1d1d1;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+}
+.infos .img .selectRight{
+    background-color: #d1d1d1;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+}
+.animationimgback{
+    animation: animationimgback 0.5s ease;
+}
+@keyframes animationimgback{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.animationimgenter{
+    animation: animationimgenter 0.5s ease;
+}
+@keyframes animationimgenter{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.infos .titulogame{
+    margin-top: 50px;
+}
+.infos .info{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.infos .infogame{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.infos .infogame .option{
+    border-right: 1px solid black;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.infos .videobox{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.infos .videobox .video{
+    width: 75%;
+    height: 95%;
+}
